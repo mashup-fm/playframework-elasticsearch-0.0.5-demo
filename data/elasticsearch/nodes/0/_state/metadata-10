@@ -1,0 +1,39 @@
+{
+  "state" : {
+    "version" : 10,
+    "meta-data" : {
+      "templates" : {
+      },
+      "indices" : {
+        "models_contact" : {
+          "state" : "open",
+          "settings" : {
+            "index.number_of_shards" : "5",
+            "index.number_of_replicas" : "1"
+          },
+          "mappings" : [ {
+            "models_contact" : {
+              "properties" : {
+                "id" : {
+                  "type" : "long"
+                },
+                "phone" : {
+                  "type" : "string"
+                },
+                "email" : {
+                  "type" : "string"
+                },
+                "address" : {
+                  "type" : "string"
+                },
+                "name" : {
+                  "type" : "string"
+                }
+              }
+            }
+          } ]
+        }
+      }
+    }
+  }
+}
